@@ -103,7 +103,7 @@ for i in NovList:
        # myfile.drop(item+12,inplace=True)
        # myfile = myfile.reset_index(drop=True)
 
-# adjust time depends on different conditions (whether the winter time or summer time zone comes first)
+# adjust time depending on the winter time zone or summer time zone comes first
 #add one hour to summer time zone, don't change the winter time zone
 if len(MarchList)==0 & len(NovList)== 0:
     pass
