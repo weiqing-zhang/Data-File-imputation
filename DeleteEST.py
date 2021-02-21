@@ -38,7 +38,7 @@ while i <len(mylist):
     else:
         i=i+1
 
-
+# check whether time shift occurs. If it doesn't, return that date.
 for i in range(len(MarchList)):
     ifright= False
     for j in range(95):
@@ -104,6 +104,7 @@ for i in NovList:
        # myfile = myfile.reset_index(drop=True)
 
 # adjust time depends on different conditions (whether the winter time or summer time zone comes first)
+#add one hour to summer time zone, don't change the winter time zone
 if len(MarchList)==0 & len(NovList)== 0:
     pass
 #add one hour during summer time zone when winter time comes first
